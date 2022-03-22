@@ -96,5 +96,17 @@ class Program {
     int sum = av1 +av2 +av3 + av4;
     int average = sum / 4;
     Console.WriteLine("The average of {0},{1},{2} is {4}", av1,av2,av3,av4,average);
+
+    Console.WriteLine();
+
+    //takes three numbers(x,y,z) as input and print the output of (x+y).z and x.y + y.z
+    Console.Write("Enter first number: ");
+    int x = int.Parse(Console.ReadLine());
+    Console.Write("Enter second number: ");
+    int y = int.Parse(Console.ReadLine());
+    Console.Write("Enter third number: ");
+    int z = int.Parse(Console.ReadLine());
+
+    Console.WriteLine("Result of specified numbers: {0}, {1}, {2}, (x+y).z is {3} and x.y + y.z is {4}", x,y,z, (x+y)*z, x*y+y*z);
   }
 }
