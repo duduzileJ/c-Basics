@@ -70,5 +70,16 @@ class Program {
     Console.WriteLine("{0} * {1} = {2}", userNum1, userNum2,mulResult);
 //displaying division calculation
     Console.WriteLine("{0} / {1} = {2}", userNum1, userNum2,divResult);
+
+    Console.WriteLine();
+    //take a number as input and print its multiplication table
+    Console.WriteLine("Multiplication table for input up to x10");
+    Console.Write("Enter number: ");
+    int userInput = int.Parse(Console.ReadLine());
+    for(int i =1; i <= 10; i++)
+    {
+      int tableNum = userInput * i;
+      Console.Write("{0} * {1} = {2}\n", userInput, i, tableNum);
+    }
   }
 }
