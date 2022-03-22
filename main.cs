@@ -43,5 +43,32 @@ class Program {
     int mul3 = int.Parse(Console.ReadLine());
     int result = (mul1 * mul2 * mul3);
     Console.WriteLine("Results: \n{0} * {1} * {2} = {3}",mul1,mul2,mul3,result);
+
+    //OUtput of adding, subtracting, multiplying and dividing two numbers entered by user.
+    Console.WriteLine("\nSubtracting, Adding, Multiplying and Dividing Number.");
+    Console.Write("Enter first number: ");
+    int userNum1 = int.Parse(Console.ReadLine());
+    Console.Write("Enter second number: ");
+    int userNum2 = int.Parse(Console.ReadLine());
+
+    //subtracting
+    int subResult = userNum1 - userNum2;
+
+    //adding
+    int addResult = userNum1 + userNum2;
+    //multiplying
+    int mulResult = userNum1 * userNum2;
+    //dividing
+    int divResult = userNum1 /userNum2;
+
+    //displaying subtracting calculation
+    Console.WriteLine("{0} - {1} = {2}", userNum1, userNum2, subResult);
+    //displaying adding calculation
+    Console.WriteLine("{0} + {1} = {2}", userNum1, userNum2,addResult);
+
+    //displaying multiplication calculation
+    Console.WriteLine("{0} * {1} = {2}", userNum1, userNum2,mulResult);
+//displaying division calculation
+    Console.WriteLine("{0} / {1} = {2}", userNum1, userNum2,divResult);
   }
 }
