@@ -21,7 +21,7 @@ class Program {
 		Console.WriteLine("{0} + {1} * {2} = {3}", num5,num,num2, cal1);
 		Console.WriteLine("( " + num + " + " + num5 + " )" + "% " + num2 + " = " + cal2);
 		//swaps two entered numbers
-    Console.WriteLine("Swap two entered numbers");
+    Console.WriteLine("\nSwap two entered numbers");
     //user enters their first number
     Console.Write("Enter the first number: ");
     int number1 = int.Parse(Console.ReadLine());
@@ -32,5 +32,16 @@ class Program {
     //display swapped numbers
     Console.WriteLine("First number: {0}", number2);
     Console.WriteLine("Second number: {0}", number1);
+
+    //display multiplications of three numbers entered by the user.
+    Console.WriteLine("\nMultiplication of entered numbers");
+    Console.Write("Input first number to multiply: ");
+    int mul1 = int.Parse(Console.ReadLine());
+    Console.Write("Input second number to multiply: ");
+    int mul2 = int.Parse(Console.ReadLine());
+    Console.Write("Enter third number to multiply: ");
+    int mul3 = int.Parse(Console.ReadLine());
+    int result = (mul1 * mul2 * mul3);
+    Console.WriteLine("Results: \n{0} * {1} * {2} = {3}",mul1,mul2,mul3,result);
   }
 }
