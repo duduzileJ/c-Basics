@@ -20,6 +20,17 @@ class Program {
 		Console.WriteLine("Long calculations:");
 		Console.WriteLine("{0} + {1} * {2} = {3}", num5,num,num2, cal1);
 		Console.WriteLine("( " + num + " + " + num5 + " )" + "% " + num2 + " = " + cal2);
-		
+		//swaps two entered numbers
+    Console.WriteLine("Swap two entered numbers");
+    //user enters their first number
+    Console.Write("Enter the first number: ");
+    int number1 = int.Parse(Console.ReadLine());
+    //user enters their second number
+    Console.Write("Enter the second number: ");
+    int number2 = int.Parse(Console.ReadLine());
+    Console.WriteLine("After swaping");
+    //display swapped numbers
+    Console.WriteLine("First number: {0}", number2);
+    Console.WriteLine("Second number: {0}", number1);
   }
 }
