@@ -80,6 +80,21 @@ class Program {
     {
       int tableNum = userInput * i;
       Console.Write("{0} * {1} = {2}\n", userInput, i, tableNum);
+      
     }
+    Console.WriteLine();
+    //takes 4 numbers as input to calculate and print average
+    Console.WriteLine("Calculate Average");
+    Console.Write("Enter first number: ");
+    int av1 = int.Parse(Console.ReadLine());
+    Console.Write("Enter second number: ");
+    int av2 = int.Parse(Console.ReadLine());
+    Console.Write("Enter third number: ");
+    int av3 = int.Parse(Console.ReadLine());
+    Console.Write("Enter fourth number: ");
+    int av4 = int.Parse(Console.ReadLine());
+    int sum = av1 +av2 +av3 + av4;
+    int average = sum / 4;
+    Console.WriteLine("The average of {0},{1},{2} is {4}", av1,av2,av3,av4,average);
   }
 }
